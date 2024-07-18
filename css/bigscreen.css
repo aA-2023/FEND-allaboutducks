@@ -1,0 +1,25 @@
+
+/* web responsiveness for larger screens */
+@media only screen and (min-width: 701px) {
+    .container {
+      margin: auto;
+      padding: 5px;
+      display: grid;
+      gap: 10px;
+      height: auto;
+      max-width: 1200px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      /* border: 2px solid red;*/
+      grid-template-areas:
+        "head head head head head"
+        "head head head head head"
+        "side content content content content"
+        "side content content content content"
+        "side content content content content"
+        "side content content content content"
+        "side content content content content"
+        "side content content content content"
+        "foot foot foot foot foot";
+    }
+  }

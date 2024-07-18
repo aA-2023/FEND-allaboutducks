@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    gap: 10px;
+    height: 90%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 2px solid red;
+    grid-template-areas: "head head head head head"
+                          "head head head head head"
+                          "head head head head head"
+                        "side content content content content"
+                        "side content content content content"
+                        "side content content content content"
+                                                "side content content content content"
+                        "side content content content content"
+                        "side content content content content"
+                        "foot foot foot foot foot";
+
+}
+
+.head {
+    border: 3px solid blue;
+    grid-area: head
+
+}
+.side {
+    border: 3px solid orange;
+    grid-area: side;
+}
+
+.content {
+    border: 3px solid green;
+     grid-area: content;
+}
+
+.foot {
+    border: 3px solid yellow;
+     grid-area: foot;
+}

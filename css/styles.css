@@ -1,0 +1,156 @@
+/* imports fancy google font and larger screen CSS layout*/
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,INFM,SPAC@0,700,56,13.2;1,700,56,13.2&display=swap");
+
+@import url("bigscreen.css");
+
+.it {
+  font-style: italic;
+}
+/* small screen layout. columns */
+@media only screen and (max-width: 700px) {
+  .container {
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 90%;
+  }
+  h3 {
+    font-size: 0.7em;
+  }
+}
+
+body {
+  background-color: #f9dc5c;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head {
+  background-color: #1f271b;
+  padding: 20px;
+  /* border: 3px solid blue; */
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lnk {
+  color: white;
+}
+.lnk:visited,
+.lnk:hover,
+.lnk:active {
+  color: #f9dc5c;
+}
+
+.ducks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+h1 {
+  font-family: "shantell sans", cursive;
+  color: white;
+  font-size-adjust: 0.7;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+}
+
+.mtn {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: "shantell sans", cursive;
+  font-size-adjust: 0.7;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+}
+/* TODO: figure out color changes! */
+
+.title {
+  padding: 20px;
+  /* border: 3px dotted blue; */
+  grid-area: head;
+}
+
+.menu {
+  /* border: 3px solid aquamarine; */
+  display: flex;
+  font-family: "shantell sans", cursive;
+
+  font-size-adjust: 0.7;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+
+  justify-content: center;
+
+  gap: 10%;
+}
+
+.side {
+  background-color: #0b4f6c;
+  /* border: 3px solid orange; */
+  grid-area: side;
+  padding: 20px;
+
+  font-family: "shantell sans", cursive;
+  color: white;
+  font-size-adjust: 0.7;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+}
+
+.content {
+  /* border: 3px solid green; */
+  grid-area: content;
+  padding: 20px;
+  background-color: #7e9181;
+  color: #1f271b;
+}
+
+.enjoy {
+  font-weight: bold;
+}
+
+.red {
+  width: 64px;
+}
+
+.button {
+  filter: grayscale(90%);
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  filter: grayscale(0);
+  box-shadow: 4px 4px 2px #f9dc5c;
+}
+
+.button:active {
+  box-shadow: 7px 7px 3px #f9dc5c;
+  transform: translateY(4px);
+}
+
+.foot {
+  background-color: #1f271b;
+  /* border: 3px solid yellow; */
+  grid-area: foot;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 3%;
+  align-items: center;
+}
