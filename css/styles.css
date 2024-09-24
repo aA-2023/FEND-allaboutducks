@@ -42,43 +42,65 @@ search {
   float: right;
 }
 
-.lnk {
+main {
+  border: 3px dotted black;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.quack {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .lnk {
   color: white;
 }
 .lnk:visited,
 .lnk:hover,
 .lnk:active {
   color: #f9dc5c;
-}
+} */
 
 .banner {
   background-image: url('/assets/colorful-duck_800.jpg');
   background-size: 100px;
-
-
-}
-
-h1 {
   font-family: "shantell sans", cursive;
   color: white;
   font-size-adjust: 0.7;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+  text-shadow: 4px 4px 5px orange;
+  text-decoration: overline underline;
+
 }
+
+/* h1 {
+  font-family: "shantell sans", cursive;
+  color: white;
+  font-size-adjust: 0.7;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+} */
 
 .mtn {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-h4 {
+/* h4 {
   font-family: "shantell sans", cursive;
   font-size-adjust: 0.7;
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-}
+} */
 /* TODO: figure out color changes! */
 
 .title {
@@ -126,13 +148,40 @@ nav {
 }
 
 .cards {
-  font-weight: bold;
+  /* font-weight: bold; */
   border: 3px solid purple;
+  padding: 20px;
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto;
+}
+
+article {
+  /* refresher: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  will likely need to import differnt flex style for vertical alignment for
+  smaller screens. place up high for priority*/
+  border: 3px dotted blue;
+  max-width: 32%;
+  display:block;
+  margin:auto;
+
+}
+
+.red {
+  width: 64px;
 }
 
 footer {
   border: 3px solid red;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 3%;
+  align-items: center;
 }
+
+
 
 .button {
   filter: grayscale(90%);
