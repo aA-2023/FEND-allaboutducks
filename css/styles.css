@@ -52,7 +52,7 @@ main {
 
 .quack {
   display: block;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,6 +165,19 @@ article {
   display:block;
   margin:auto;
 
+}
+
+.articlePad {
+  margin: 10px;
+  align-items: center;
+  border: 3px solid grey;
+}
+
+
+.articleText {
+  padding: 20px;
+  align-items: center;
+  border: 3px solid green;
 }
 
 .red {
