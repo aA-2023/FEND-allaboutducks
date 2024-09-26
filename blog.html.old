@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RUBER DUCKS!</title>
+    <meta name="viewport" content="width=90%, initial-scale=1, height=90%">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="title">
+                <h1 class="mtn">ALL ABOUT DUCKS!!</h1>
+            </div>
+            <div class="menu">
+                <h3 class="mtn"> <a href="about.html" class="lnk">ABOUT</a> |
+                    <a href="search.html" class="lnk">SEARCH</a> |
+                    <a href="susbscribe.html" class="lnk"> SUBSCRIBE</a>
+                </h3>
+            </div>
+
+
+        </div>
+        <div class="side mtn">
+            <h2 class="mtn">LINKS</h2>
+            <p><a href="index.html" class="lnk">HOME</a>
+            <p>
+                <a href="blog.html" class="lnk">Blog</a>
+        </div>
+
+        <div class="content">
+            <h4 class="mtn">RUBBER DUCKS!</h4><img src="assets/taxduck.png" alt="rubber duck" class="ducks"> </p>here
+            are various types of ducks in the world. In programming, the rubber duck is very popular. Rubber ducking is
+            the act of debugging code out loud by explaining the code to a rubber duck, line by line. <p>This method
+                often allows a programmer to hit upon the solution to the bug. One for my desk at home would be useful
+                for the many times I get confused by my own code. This duck is the one that sits on my desk at work. It
+                doesn't know anything about fighting the IRS, but it still looks cute.
+
+        </div>
+        <div class="foot">Made in 2024 with <a href="http://www.udacity.com"><img src="assets/udacity.webp"
+                    alt="udacity icon" class="button"></a><a href="http://www.oneten.org"><img src="assets/oneten.svg"
+                    alt="oneten icon" class="button"></a><a href="https://www.redbull.com/us-en"><img
+                    src="assets/energy.png" alt="red bull icon" class="red button"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

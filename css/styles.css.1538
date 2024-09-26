@@ -22,48 +22,9 @@
     font-size: 0.7em;
   }
 
-body {
   background-color: #fbfff4;
   /*  color: white; */
   font-family: sans-serif;
-}
-
-.red {
-  width: 64px;
-}
-
-footer {
-  border: 3px solid #2b3618;
-  background-color: #2b3618;
-  color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    gap: 3%;
-    align-items: center;
-  grid-area: footer;
-}
-
-
-
-
-.button {
-  filter: grayscale(90%);
-  transition-duration: 0.4s;
-  max-height: 10%;
-}
-
-.button:hover {
-  filter: grayscale(0);
-  box-shadow: 4px 4px 2px #f9dc5c;
-}
-
-.button:active {
-  box-shadow: 7px 7px 3px #f9dc5c;
-  transform: translateY(4px);
-}
-
 }
 
 .container {
