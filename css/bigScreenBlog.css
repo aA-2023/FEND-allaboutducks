@@ -45,6 +45,8 @@
     grid-area: content;
     padding: 20px;
     grid-area: nav;
+
+    border: 3px solid #2b3618;
     /*   display:flex;
       align-items: center; */
 
@@ -95,6 +97,12 @@
     align-items: center;
     /*   border: 3px solid green; */
   }
+
+  .social img{
+    /*     border: 3px solid orange; */
+        max-width: 40px;
+        padding-bottom: 20px;
+      }
 
   .authorInfo {
     /*   border: 3px dotted purple; */
