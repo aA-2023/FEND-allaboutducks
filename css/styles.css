@@ -1,200 +1,56 @@
-/* imports fancy google font and larger screen CSS layout*/
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,INFM,SPAC@0,700,56,13.2;1,700,56,13.2&display=swap");
+@import url("/css/bigScreenBlog.css");
+@import url("/css/smallScreenBlog.css");
+@import url("/css/bigScreenHome.css");
 
-@import url("bigscreen.css");
+/*     body {
+      background-color: #fbfff4;
+
+      font-family: sans-serif;
+    }
+    h4 {
+      padding-left: 20px;
+      color: white;
+      font-family: "shantell sans", cursive;
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+      font-
+      variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+    }
+
+  .red {
+    width: 64px;
 
 
-
-
-.it {
-  font-style: italic;
-
-}
-/* small screen layout. columns */
-@media only screen and (max-width: 700px) {
-  .container {
-    margin: auto;
-
-    gap: 10px;
-    height: 90%;
   }
-  h3 {
-    font-size: 0.7em;
+
+  footer {
+    border: 3px solid #2b3618;
+    background-color: #2b3618;
+    color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      gap: 3%;
+      align-items: center;
+    grid-area: footer;
   }
 
-body {
-  background-color: #fbfff4;
-  /*  color: white; */
-  font-family: sans-serif;
-}
-
-.red {
-  width: 64px;
-}
-
-footer {
-  border: 3px solid #2b3618;
-  background-color: #2b3618;
-  color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    gap: 3%;
-    align-items: center;
-  grid-area: footer;
-}
 
 
+  .button {
+    filter: grayscale(90%);
+    transition-duration: 0.4s;
 
+  }
 
-.button {
-  filter: grayscale(90%);
-  transition-duration: 0.4s;
-  max-height: 10%;
-}
+  .button:hover {
+    filter: grayscale(0);
+    box-shadow: 4px 4px 2px #f9dc5c;
+  }
 
-.button:hover {
-  filter: grayscale(0);
-  box-shadow: 4px 4px 2px #f9dc5c;
-}
-
-.button:active {
-  box-shadow: 7px 7px 3px #f9dc5c;
-  transform: translateY(4px);
-}
-
-}
-
-.container {
-  padding: 20px;
-  border: 3px solid blue;
-  grid-area: head;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-search {
-  float: right;
-}
-
-main {
-  border: 3px dotted black;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.quack {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* .lnk {
-  color: white;
-}
-.lnk:visited,
-.lnk:hover,
-.lnk:active {
-  color: #f9dc5c;
-} */
-
-.banner {
-  border: 3px solid #2b3618;
-  background-color: #2b3618;
-  color: white;
-  padding: 20px;
-  font-family: "shantell sans", cursive;
-
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-}
-
-/* h1 {
-  font-family: "shantell sans", cursive;
-  color: white;
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-} */
-
-
-
-h4 {
-  padding-left: 20px;
-  color: white;
-  font-family: "shantell sans", cursive;
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-}
-
-/* TODO: figure out color changes! */
-
-
-
-.menu {
-  /* border: 3px solid aquamarine; */
-  display: flex;
-  font-family: "shantell sans", cursive;
-
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-
-  justify-content: center;
-
-  gap: 10%;
-}
-
-nav {
-  border: 3px solid #2b3618;
-  grid-area: content;
-  padding: 20px;
-  color: #1f271b;
-}
-
-.cards {
-  /* font-weight: bold; */
-  border: 3px solid purple;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
-}
-
-article {
-  /* refresher: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  will likely need to import differnt flex style for vertical alignment for
-  smaller screens. place up high for priority*/
-
-  border: 3px dotted blue;
-  max-width: 32%;
-  display: flex;
-  min-width: 300px;
-}
-
-.articlePad {
-  background-color: #2b3618;
-  margin: 10px;
-  align-items: center;
-  border: 3px solid grey;
-}
-
-.articleText {
-  color: white;
-  padding: 20px;
-  align-items: center;
-  border: 3px solid green;
-}
+  .button:active {
+    box-shadow: 7px 7px 3px #f9dc5c;
+    transform: translateY(4px);
+  } */

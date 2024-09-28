@@ -1,10 +1,5 @@
-
-/* imports fancy google font and larger screen CSS layout*/
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,INFM,SPAC@0,700,56,13.2;1,700,56,13.2&display=swap");
-
-/* web responsiveness for larger screens */
 @media only screen and (min-width: 701px) {
-  .container {
+  .containerBlog {
     margin: auto;
     padding: 5px;
     display: grid;
@@ -13,12 +8,11 @@
     max-width: 1200px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(11, 1fr);
-    border: 2px solid red;
+    /*     border: 2px solid red; */
     grid-template-areas:
       "nav nav nav nav nav"
-
       "banner banner banner banner banner"
-            "banner banner banner banner banner"
+      "banner banner banner banner banner"
       "main main main main authorInfo"
       "main main main main authorInfo"
       "main main main main authorInfo"
@@ -38,247 +32,174 @@
       "main main main main authorInfo"
       "main main main main authorInfo"
       "footer footer footer footer footer";
-  }
-  h2 {
 
-    color: #2b3618;
-    font-family: "shantell sans", cursive;
+
+  body {
+    background-color: #fbfff4;
+    /*  color: white; */
+    font-family: sans-serif;
+  }
+
+  nav {
+    /*   border: 3px solid green; */
+    grid-area: content;
+    padding: 20px;
+    grid-area: nav;
+    /*   display:flex;
+      align-items: center; */
+
+    color: #1f271b;
+  }
+
+  .banner {
+    border: 3px solid #2b3618;
+    background-color: #2b3618;
+    color: white;
+    padding: 20px;
+    font-family: cursive, sans-serif;
+
     font-size-adjust: 0.7;
     font-weight: 700;
     font-style: normal;
-    font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+
+    grid-area: banner;
   }
 
+  main {
+    border: 3px solid #2b3618;
 
-  .photo{
-    margin-top:20px;
-    border: 3px solid blue;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-
-
-
-  }
-  .authorName {
-    border: 3px dotted orange;
-    max-height: 30px;
-}
-
-  .bio {
-  border: 3px dashed green;
-  margin-top:20px;
-  padding-left:20px;
-  padding-right:17px;
-
-}
-}
-
-
-@media only screen and (max-width: 700px) {
-
-  h2 {
-
-    color: #2b3618;
-    font-family: "shantell sans", cursive;
-    font-size-adjust: 0.7;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-  }
-  .authorPhoto {
-    max-height: 175px;
-  }
-  .photo{
-    border: 3px dotted blue;
-  display:flex;
-  flex-direction:row;
-
-  }
-  .bio {
-    border: 3px dashed green;
-    margin-left:20px;
-    padding-left:20px;
-    padding-right:17px;
-  padding-top: 10px;
-text-size-adjust: 80%;}
-  .authorName {
-    border: 3px dotted orange;
-    max-height: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
-}
-
+    grid-area: main;
   }
 
+  h2 {
+    color: #2b3618;
+    font-family: cursive, sans-serif;
+    font-size-adjust: 0.7;
+    font-weight: 700;
+    font-style: normal;
+  }
 
+  .quack {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .articleText {
+    padding: 20px;
+    align-items: center;
+    /*   border: 3px solid green; */
+  }
 
+  .authorInfo {
+    /*   border: 3px dotted purple; */
+    grid-area: authorInfo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .authorName {
+    /*  border: 3px solid orange; */
+    max-height: 30px;
+    font-style: italic;
+  }
 
-body {
-  background-color: #fbfff4;
-  /*  color: white; */
-  font-family: sans-serif;
-}
+  .photo {
+    margin-top: 20px;
+    /*     border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-nav {
-/*   border: 3px solid green; */
-  grid-area: content;
-  padding: 20px;
-  grid-area: nav;
-/*   display:flex;
-  align-items: center; */
+  .authorPhoto {
+    /*     border: 3px solid orange; */
+    max-width: 75%;
+    border-radius: 50%;
+  }
 
-  color: #1f271b;
-}
+  .bio {
+    /*     border: 3px dashed green; */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 17px;
+  }
 
-search {
-  float: right;
-}
-
-main {
-  border: 3px solid #2b3618;
-
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom:10px;
-  grid-area: main;
-}
-
-.quack {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* .lnk {
-  color: white;
-}
-.lnk:visited,
-.lnk:hover,
-.lnk:active {
-  color: #f9dc5c;
-} */
-
-.banner {
-  border: 3px solid #2b3618;
-  background-color: #2b3618;
-  color: white;
-  padding: 20px;
-  font-family: "shantell sans", cursive;
-
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-
-
-  grid-area: banner
-
-}
-
-/* h1 {
-  font-family: "shantell sans", cursive;
-  color: white;
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-} */
-
-
-
-/* h4 {
-  font-family: "shantell sans", cursive;
-  font-size-adjust: 0.7;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
-} */
-/* TODO: figure out color changes! */
-
-
-
-
-
-
-
-
-
-.articlePad {
-  margin: 10px;
-  align-items: center;
-  border: 3px solid grey;
-}
-
-
-.articleText {
-  padding: 20px;
-  align-items: center;
-/*   border: 3px solid green; */
-}
-
-
-
-
-/* info sidebar */
-
-.authorInfo {
-/*   border: 3px dotted purple; */
-  grid-area: authorInfo;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding-top: 50px;
-
-
-}
-
-
-
-
-.authorPhoto {
-/*     border: 3px solid orange; */
-    max-width:75%;
-    border-radius: 50%
-
-}
-
-
-
-
-.red {
-  width: 64px;
-}
-
-footer {
-  border: 3px solid #2b3618;
-  background-color: #2b3618;
-  color: white;
+  footer {
+    border: 3px solid #2b3618;
+    background-color: #2b3618;
+    color: white;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: right;
     gap: 3%;
     align-items: center;
-  grid-area: footer;
+    grid-area: footer;
+  }
+
+  /*   search {
+    float: right;
+  } */
+
+  /* .lnk {
+    color: white;
+  }
+  .lnk:visited,
+  .lnk:hover,
+  .lnk:active {
+    color: #f9dc5c;
+  } */
+
+  /* h1 {
+    font-family: cursive, sans-serif;
+    color: white;
+    font-size-adjust: 0.7;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+  } */
+
+  /* h4 {
+    font-family: cursive, sans-serif;
+    font-size-adjust: 0.7;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "BNCE" 0, "INFM" 56, "SPAC" 13.2;
+  } */
+  /* TODO: figure out color changes! */
+
+  .articlePad {
+    margin: 10px;
+    align-items: center;
+    border: 3px solid grey;
+  }
+
+  /* info sidebar */
+
+  .red {
+    width: 64px;
+  }
+
+  .button {
+    filter: grayscale(90%);
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    filter: grayscale(0);
+    box-shadow: 4px 4px 2px #f9dc5c;
+  }
+
+  .button:active {
+    box-shadow: 7px 7px 3px #f9dc5c;
+    transform: translateY(4px);
+  }
 }
-
-
-
-.button {
-  filter: grayscale(90%);
-  transition-duration: 0.4s;
-}
-
-.button:hover {
-  filter: grayscale(0);
-  box-shadow: 4px 4px 2px #f9dc5c;
-}
-
-.button:active {
-  box-shadow: 7px 7px 3px #f9dc5c;
-  transform: translateY(4px);
 }

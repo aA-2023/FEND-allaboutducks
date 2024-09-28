@@ -1,0 +1,181 @@
+/* web responsiveness for larger screens */
+@media only screen and (min-width: 701px) {
+  body {
+    background-color: #fbfff4;
+    /*  color: white; */
+    font-family: sans-serif;
+  }
+  .container {
+    margin: auto;
+    padding: 5px;
+
+    gap: 10px;
+    height: auto;
+    max-width: 1200px;
+    padding: 20px;
+/*     border: 3px solid blue;
+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      padding-left: 20px;
+      color: white;
+      font-family: cursive, sans-serif;
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .it {
+      font-style: italic;
+    }
+    /* small screen layout. columns */
+    .quotation {
+        color: #2b3618;
+    }
+    h3 {
+      font-size: 0.7em;
+    }
+
+    .red {
+      width: 64px;
+    }
+
+    footer {
+      border: 3px solid #2b3618;
+      background-color: #2b3618;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      gap: 3%;
+      align-items: center;
+    }
+
+    .button {
+      filter: grayscale(90%);
+      transition-duration: 0.4s;
+      max-height: 10%;
+    }
+
+    .button:hover {
+      filter: grayscale(0);
+      box-shadow: 4px 4px 2px #f9dc5c;
+    }
+
+    .button:active {
+      box-shadow: 7px 7px 3px #f9dc5c;
+      transform: translateY(4px);
+    }
+
+    search {
+      float: right;
+    }
+
+    main {
+/*       border: 3px dotted black;
+ */      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .quack {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* .lnk {
+    color: white;
+  }
+  .lnk:visited,
+  .lnk:hover,
+  .lnk:active {
+    color: #f9dc5c;
+  } */
+
+    .banner {
+      border: 3px solid #2b3618;
+      background-color: #2b3618;
+      color: white;
+      padding: 20px;
+      font-family: cursive, sans-serif;
+
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* h1 {
+    font-family: "shantell sans", cursive;
+    color: white;
+    font-size-adjust: 0.7;
+    font-weight: 700;
+    font-style: normal;
+  } */
+
+    /* TODO: figure out color changes! */
+
+    .menu {
+      /* border: 3px solid aquamarine; */
+      display: flex;
+      font-family: cursive, sans-serif;
+
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+
+      justify-content: center;
+
+      gap: 10%;
+    }
+
+    nav {
+      border: 3px solid #2b3618;
+      grid-area: content;
+      padding: 20px;
+      color: #1f271b;
+    }
+
+    .cards {
+      /* font-weight: bold; */
+/*       border: 3px solid purple;
+ */      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+    article {
+      /* refresher: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    will likely need to import differnt flex style for vertical alignment for
+    smaller screens. place up high for priority*/
+
+/*       border: 3px dotted blue;
+ */      max-width: 32%;
+      display: flex;
+      min-width: 300px;
+    }
+
+    .articlePad {
+      background-color: #2b3618;
+      margin: 10px;
+      align-items: center;
+      border: 3px solid grey;
+    }
+
+    .articleText {
+      color: white;
+      padding: 20px;
+      align-items: center;
+      border: 3px solid green;
+    }
+  }
+}
