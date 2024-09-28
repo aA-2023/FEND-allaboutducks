@@ -1,96 +1,97 @@
 /* web responsiveness for larger screens */
 @media only screen and (max-width: 700px) {
-    body {
-      background-color: #fbfff4;
-      /*  color: white; */
-      font-family: sans-serif;
-    }
-    .container {
-      margin: auto;
-      padding: 5px;
+  body {
+    background-color: #fbfff4;
+    /*  color: white; */
+    font-family: sans-serif;
+  }
+  .container {
+    margin: auto;
+    padding: 5px;
 
-      gap: 10px;
-      height: auto;
-      max-width: 1200px;
-      padding: 20px;
-  /*     border: 3px solid blue;
+    gap: 10px;
+    height: auto;
+    max-width: 1200px;
+    padding: 20px;
+    /*     border: 3px solid blue;
    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      padding-left: 20px;
+      color: white;
+      font-family: cursive, sans-serif;
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .it {
+      font-style: italic;
+    }
+    /* small screen layout. columns */
+    .quotation {
+      color: #2b3618;
+    }
+    h3 {
+      font-size: 0.7em;
+    }
+
+    .red {
+      width: 64px;
+    }
+
+    footer {
+      border: 3px solid #2b3618;
+      background-color: #2b3618;
+      color: white;
+      padding: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: right;
+      gap: 3%;
+      align-items: center;
+    }
 
-      h4 {
-        padding-left: 20px;
-        color: white;
-        font-family: cursive, sans-serif;
-        font-size-adjust: 0.7;
-        font-weight: 700;
-        font-style: normal;
-      }
+    .button {
+      filter: grayscale(90%);
+      transition-duration: 0.4s;
+      max-height: 10%;
+    }
 
-      .it {
-        font-style: italic;
-      }
-      /* small screen layout. columns */
-      .quotation {
-          color: #2b3618;
-      }
-      h3 {
-        font-size: 0.7em;
-      }
+    .button:hover {
+      filter: grayscale(0);
+      box-shadow: 4px 4px 2px #f9dc5c;
+    }
 
-      .red {
-        width: 64px;
-      }
+    .button:active {
+      box-shadow: 7px 7px 3px #f9dc5c;
+      transform: translateY(4px);
+    }
 
-      footer {
-        border: 3px solid #2b3618;
-        background-color: #2b3618;
-        color: white;
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        gap: 3%;
-        align-items: center;
-      }
+    search {
+      float: right;
+    }
 
-      .button {
-        filter: grayscale(90%);
-        transition-duration: 0.4s;
-        max-height: 10%;
-      }
+    main {
+      /*       border: 3px dotted black;
+   */
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
-      .button:hover {
-        filter: grayscale(0);
-        box-shadow: 4px 4px 2px #f9dc5c;
-      }
+    .quack {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .button:active {
-        box-shadow: 7px 7px 3px #f9dc5c;
-        transform: translateY(4px);
-      }
-
-      search {
-        float: right;
-      }
-
-      main {
-  /*       border: 3px dotted black;
-   */      padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-
-      .quack {
-        display: block;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* .lnk {
+    /* .lnk {
       color: white;
     }
     .lnk:visited,
@@ -99,19 +100,19 @@
       color: #f9dc5c;
     } */
 
-      .banner {
-        border: 3px solid #2b3618;
-        background-color: #2b3618;
-        color: white;
-        padding: 20px;
-        font-family: cursive, sans-serif;
+    .banner {
+      border: 3px solid #2b3618;
+      background-color: #2b3618;
+      color: white;
+      padding: 20px;
+      font-family: cursive, sans-serif;
 
-        font-size-adjust: 0.7;
-        font-weight: 700;
-        font-style: normal;
-      }
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
+    }
 
-      /* h1 {
+    /* h1 {
       font-family: "shantell sans", cursive;
       color: white;
       font-size-adjust: 0.7;
@@ -119,68 +120,70 @@
       font-style: normal;
     } */
 
-      /* TODO: figure out color changes! */
+    /* TODO: figure out color changes! */
 
-      .menu {
-        /* border: 3px solid aquamarine; */
-        display: flex;
-        font-family: cursive, sans-serif;
+    .menu {
+      /* border: 3px solid aquamarine; */
+      display: flex;
+      font-family: cursive, sans-serif;
 
-        font-size-adjust: 0.7;
-        font-weight: 700;
-        font-style: normal;
+      font-size-adjust: 0.7;
+      font-weight: 700;
+      font-style: normal;
 
-        justify-content: center;
+      justify-content: center;
 
-        gap: 10%;
-      }
-
-      nav {
-        border: 3px solid #2b3618;
-        grid-area: content;
-        padding: 20px;
-        color: #1f271b;
-      }
-      .quotationBox {
-        border: 3px dotted #f9dc5c;;
-        color: #2b3618;
-        padding-top: 5px;
-        max-width: 500px;
+      gap: 10%;
     }
-      .cards {
-        /* font-weight: bold; */
-  /*       border: 3px solid purple;
-   */      padding: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-        justify-content: center;
-      }
 
-      article {
-        /* refresher: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    nav {
+      border: 3px solid #2b3618;
+      grid-area: content;
+      padding: 20px;
+      color: #1f271b;
+    }
+    .quotationBox {
+      border: 3px dotted #f9dc5c;
+      color: #2b3618;
+      padding-top: 5px;
+      max-width: 500px;
+    }
+    .cards {
+      /* font-weight: bold; */
+      /*       border: 3px solid purple;
+   */
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+    article {
+      /* refresher: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
       will likely need to import differnt flex style for vertical alignment for
       smaller screens. place up high for priority*/
 
-  /*       border: 3px dotted blue;
-   */      max-width: 32%;
-        display: flex;
-        min-width: 300px;
-      }
+      /*       border: 3px dotted blue;
+   */
+      max-width: 32%;
+      display: flex;
+      min-width: 300px;
+    }
 
-      .articlePad {
-        background-color: #2b3618;
-        margin: 10px;
-        align-items: center;
-        border: 3px solid grey;
-      }
+    .articlePad {
+      background-color: #2b3618;
+      margin: 10px;
+      align-items: center;
+      border: 3px solid grey;
+    }
 
-      .articleText {
-        color: white;
-        padding: 20px;
-        align-items: center;
-     /*    border: 3px solid green; */
-      }
+    .articleText {
+      color: white;
+      padding: 20px;
+      align-items: center;
+      /*    border: 3px solid green; */
     }
   }
+}

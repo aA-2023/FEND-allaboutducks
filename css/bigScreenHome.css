@@ -13,7 +13,7 @@
     height: auto;
     max-width: 1200px;
     padding: 20px;
-/*     border: 3px solid blue;
+    /*     border: 3px solid blue;
  */
     display: flex;
     flex-direction: column;
@@ -34,10 +34,10 @@
     /* small screen layout. columns */
 
     .quotationBox {
-        border: 3px dotted #f9dc5c;;
-        color: #2b3618;
-        padding-top: 5px;
-        max-width: 500px;
+      border: 3px dotted #f9dc5c;
+      color: #2b3618;
+      padding-top: 5px;
+      max-width: 500px;
     }
     h3 {
       font-size: 0.7em;
@@ -80,8 +80,9 @@
     }
 
     main {
-/*       border: 3px dotted black;
- */      padding-right: 20px;
+      /*       border: 3px dotted black;
+ */
+      padding-right: 20px;
       padding-left: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -148,8 +149,9 @@
 
     .cards {
       /* font-weight: bold; */
-/*       border: 3px solid purple;
- */      padding: 20px;
+      /*       border: 3px solid purple;
+ */
+      padding: 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -162,8 +164,9 @@
     will likely need to import differnt flex style for vertical alignment for
     smaller screens. place up high for priority*/
 
-/*       border: 3px dotted blue;
- */      max-width: 32%;
+      /*       border: 3px dotted blue;
+ */
+      max-width: 32%;
       display: flex;
       min-width: 300px;
     }
@@ -179,7 +182,7 @@
       color: white;
       padding: 20px;
       align-items: center;
-    /*   border: 3px solid green; */
+      /*   border: 3px solid green; */
     }
   }
 }
