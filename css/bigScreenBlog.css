@@ -50,6 +50,14 @@
       align-items: center; */
 
       color: #1f271b;
+      a {
+        color: #2b3618;
+      }
+    .a:visited,
+      .a:hover,
+      .a:active {
+        color: #2b3618;
+      }
     }
 
     .banner {
@@ -82,6 +90,15 @@
       font-size-adjust: 0.7;
       font-weight: 700;
       font-style: normal;
+    }
+
+    blockquote {
+      padding-left: 7%;
+      padding-right: 7%;
+      box-shadow: 7px 7px 3px #f9dc5c;
+      border-top: 3px dotted #2b3618;
+      border-left: 3px dotted #2b3618;
+      font-size: 95%;
     }
 
     .quack {
@@ -136,6 +153,7 @@
       margin-top: 20px;
       padding-left: 20px;
       padding-right: 17px;
+      font-size: 90%%;
     }
 
     footer {

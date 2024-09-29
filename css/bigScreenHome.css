@@ -145,7 +145,17 @@
       grid-area: content;
       padding: 20px;
       color: #1f271b;
+
+      a {
+        color: #2b3618;
+      }
+    .a:visited,
+      .a:hover,
+      .a:active {
+        color: #2b3618;
+      }
     }
+
 
     .cards {
       /* font-weight: bold; */
@@ -183,6 +193,15 @@
       padding: 20px;
       align-items: center;
       /*   border: 3px solid green; */
+
+      a {
+        color: #f9dc5c;
+      }
+    .a:visited,
+      .a:hover,
+      .a:active {
+        color: #f9dc5c;
+      }
     }
   }
 }
