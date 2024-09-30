@@ -1,7 +1,7 @@
-@import url("/css/bigScreenBlog.css");
-@import url("/css/smallScreenBlog.css");
-@import url("/css/bigScreenHome.css");
-@import url("/css/smallScreenHome.css");
+@import url("bigScreenBlog.css");
+@import url("smallScreenBlog.css");
+@import url("bigScreenHome.css");
+@import url("smallScreenHome.css");
 
 /*     body {
       background-color: #fbfff4;
